@@ -27,7 +27,11 @@ logger.info(f"预约时间：{TOMORROW}，目标时间段：{TARGET_TIMES}, 用�
 def initialize_driver():
     """初始化Chrome浏览器并导航到预约页面"""
     options = webdriver.ChromeOptions()
-    options.proxy = Proxy({ 'proxyType': ProxyType.MANUAL, 'httpProxy' : '127.0.0.1:7890', 'httpsProxy': '127.0.0.1:7890'})
+    options.proxy = Proxy({
+        'proxyType': ProxyType.MANUAL,
+        'httpProxy' : '127.0.0.1:7890',
+        'httpsProxy': '127.0.0.1:7890'
+    })
     driver = webdriver.Chrome(options=options)
     driver.get("https://ehall.szu.edu.cn/qljfwapp/sys/lwSzuCgyy/index.do#/sportVenue")
     return driver

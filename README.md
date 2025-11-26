@@ -30,3 +30,5 @@ uv sync
 ```
 python main.py
 ```
+
+代码中默认使用了本地代理，使用时请根据自己的需要`initialize_driver`中代理的部分进行修改。
