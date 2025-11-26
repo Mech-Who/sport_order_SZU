@@ -1,0 +1,10 @@
+[project]
+name = "sport-order-szu"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "selenium>=4.38.0",
+]
